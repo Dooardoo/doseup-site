@@ -1,153 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoseUp - Aplicativo de Controle de Medicamentos</title>
+    <title>DoseUp</title>
     <style>
-        /* Reset básico */
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Questrial', Arial, sans-serif;
         }
 
         body {
-            background-color: #fff;
-            color: #000;                                                                                                                                                                                                                                                                                             
-            line-height: 1.6;
+            font-family: 'Questrial', sans-serif;
+            background-color: #f9f9f9;
         }
 
-        /* Header */
+        
         header {
             background: linear-gradient(to right, #0097b2, #00bf63);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 20px 10px;
         }
 
         header h1 {
-            font-family: '29LT BUKRA WIDE', Arial, sans-serif;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
+            font-family: '29LT Bukra Wide', sans-serif;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
 
         header p {
-            font-size: 1rem;
+            font-size: 1.2em;
         }
 
-        /* Seção principal */
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px 0;
-            text-align: center;
-        }
-
+        
         .description {
+            max-width: 800px;
+            margin: 30px auto;
             background-color: #00bf63;
             color: white;
-            border-radius: 10px;
             padding: 20px;
-            max-width: 700px;
-            margin: 20px auto;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 1.5;
         }
 
-        .logo img {
-            height: 120px; /* Ajustado proporcionalmente */
-            width: 120px;
-        }
-
-        /* Imagens do app */
-        .images-section h2 {
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
-            font-size: 1.5rem;
-            font-weight: bold;
+        }
+
+        .logo-container img {
+            width: 200px;
+            height: auto;
+        }
+
+        
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.8em;
+            color: #333;
         }
 
         .images-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            margin: 20px auto;
+            max-width: 1200px; 
         }
 
         .image-box {
-            background: linear-gradient(to bottom, #00bf63, #0097b2);
             width: 331.7px;
             height: 590.5px;
+            background-color: #00bf63;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #fff;
+            font-size: 1.2em;
             border-radius: 10px;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
+            overflow: hidden; 
         }
 
-        /* Rodapé */
+        .image-box img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #f8f8f8;
-            font-size: 0.9rem;
-            margin-top: 20px;
+            margin: 30px 0;
+            color: #333;
         }
     </style>
 </head>
 <body>
-
-    <!-- Cabeçalho -->
+    
     <header>
         <h1>DOSEUP</h1>
         <p>O seu aplicativo de saúde para controle de medicamentos</p>
     </header>
 
-    <!-- Descrição do app -->
-    <div class="container">
-        <div class="description">
-            <p>
-                Doseup é um aplicativo com o objetivo de facilitar a gestão e o controle maior ao tomar os medicamentos. 
-                Ele auxilia os usuários a tomarem os seus medicamentos nos horários certos, garantindo assim uma melhor eficiência 
-                do tratamento e do devido resultado. O Doseup oferece recursos como lembretes personalizados e notificações 
-                para garantir que os usuários não se esqueçam de tomar suas doses e comprimidos.
-            </p>
-        </div>
-
-        <!-- Logo -->
-        <div class="logo">
-            <img src="logo.png" alt="Logo DoseUp">
-        </div>
-
-        <!-- Imagens do app -->
-<div class="images-section">
-    <h2>Imagens do app</h2>
-    <div class="images-container">
-        <div class="image-box">
-            <img src="print1.png" alt="Print 1 do aplicativo">
-        </div>
-        <div class="image-box">
-            <img src="print2.png" alt="Print 2 do aplicativo">
-        </div>
-        <div class="image-box">
-            <img src="print3.png" alt="Print 3 do aplicativo">
-        </div>
-        <div class="image-box">
-            <img src="print4.png" alt="Print 4 do aplicativo">
-        </div>
-        <div class="image-box">
-            <img src="print5.png" alt="Print 5 do aplicativo">
-        </div>
+    
+    <div class="description">
+        Doseup é um aplicativo com o objetivo de facilitar a gestão e o controle maior ao tomar os medicamentos. Ele ajuda os usuários a tomarem os seus medicamentos nos horários certos, garantindo assim uma melhor eficiência do tratamento e o devido resultado. O Doseup oferece recursos como lembretes personalizados e notificações para garantir que os usuários não se esqueçam de tomar suas doses e comprimidos.
     </div>
-</div>
 
+    
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo do DoseUp">
+    </div>
 
-    <!-- Rodapé -->
+    
+    <h2>Imagens do App</h2>
+    <div class="images-container">
+        <div class="image-box"><img src="print1.png" alt="Print 1"></div>
+        <div class="image-box"><img src="print2.png" alt="Print 2"></div>
+        <div class="image-box"><img src="print3.png" alt="Print 3"></div>
+        <div class="image-box"><img src="print4.png" alt="Print 4"></div>
+        <div class="image-box"><img src="print5.png" alt="Print 5"></div>
+    </div>
+
+    
     <footer>
         &copy; 2024 DoseUp. Todos os direitos reservados.
     </footer>
-
 </body>
 </html>
